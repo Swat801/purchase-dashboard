@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purchase Module</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="purchase.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="topbar-title">
+      <span class="bar-accent"></span>
+      <div>
+        <h1>Purchase Module</h1>
+        <p>Supplier priority intelligence — <span id="clock">--:--:--</span></p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span class="live-pill"><span class="dot pulse"></span>Live Data</span>
+    </div>
+  </header>
+
+  <!-- Supplier Priority Matrix -->
+  <section class="card supplier-card">
+    <div class="card-head">
+      <div>
+        <h2>Supplier Priority Matrix — Purchase Category 1</h2>
+        <p>Columns ranked Priority 1 → 4 by quality of delivery, then pricing, then delivery time</p>
+      </div>
+
+      <div class="supplier-head-right">
+        <div class="seg-toggle" id="categoryToggle">
+          <button class="seg-btn active" data-view="tubular" type="button">Tubular</button>
+          <button class="seg-btn" data-view="liion" type="button">Li-ion</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="supplier-table-wrap">
+      <table class="supplier-table" id="supplierTable">
+        <thead id="supplierThead"></thead>
+        <tbody id="supplierTbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="foot-note">Battery ERP · Purchase Intelligence</footer>
+
+</div>
+
+<script src="purchase.js"></script>
+</body>
+</html>
