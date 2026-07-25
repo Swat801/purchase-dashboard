@@ -103,7 +103,7 @@ const purchaseData = {
     liion: {
         materials: [
             {
-                name: "Lithium Carbonate",
+                name: "Lithium Carbonate Aur kuch bhi aur nhi",
                 color: "#6C4CFF",
                 unit: "₹/kg",
                 suppliers: [
